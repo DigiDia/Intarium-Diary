@@ -1,0 +1,145 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif ;
+}
+
+header{
+position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  z-index: 99;
+
+}
+
+.logo{
+  font-size: 2em;
+  color: white;
+  user-select: none;
+}
+
+ .navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+  }
+  
+  .navigation .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: white;
+    font-weight: 500;
+    margin-left: 40px;
+   transition: .5s;
+   }
+   .navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white ;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: .5s;
+   }
+  .navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+.navigation .btnLogin-popup:hover {
+  background: white ;
+  color: black;
+}
+
+header1{
+	width: 100vw;
+height: 120vh;
+	background-image:url(img/fav1.jfif);
+	background-size: cover;
+background-repeat: no-repeat; /* Fix missing semicolon */
+background-position: center; /* Fix missing semicolon */
+display: flex; /* Fix missing semicolon */
+align-items: center; /* Fix missing semicolon */
+justify-content: center; /* Fix missing semicolon */
+}
+
+body{
+	background: #FAF0E6;
+}
+
+.btn { 
+	text-align: center;
+		margin-top: 0;
+		background: #D3D3D3;
+		font-family: "Times New Roman", Times, serif;
+}
+
+section{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background: linear-gradient(#FAF0E6, #D3D3D3);
+}
+
+.title h1{
+	text-align: center;
+		margin-top: 50px;
+		background: #FAF0E6;
+}
+
+
+.textA{
+	margin-top: 20px;
+	width: 90%;
+	background: #fff;
+	border-radius: 5px;
+	padding: 25px 25px 30px;
+
+}
+
+.textA h2{
+	color: #4671EA;
+	font-size: 28px;
+	text-align: center;
+}
+
+.textA textarea{
+	width: 100%;
+	height: 500px;
+	padding: 15px;
+	outline: none;
+	resize: none;
+	font-size: 16px;
+	margin-top: 20px;
+	border-radius: 5px;
+	border-color: #bfbfbf;
+	max-height: none;
+}
+textarea:is(:focus, :valid){
+	border-color: black;
+	border-width: 2px;
+	padding: 14px;
+}
+textarea::-webkit-scrollbar{
+	width: 0px;
+}

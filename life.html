@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Life</title>
+	<link rel="stylesheet"  href=" life.css">
+
+</head>
+<body>
+	<header>
+			<nav class="navigation">
+		<a href="index.html"><h2 class="logo">Intarium</h2></a>
+	</nav>
+    <nav class="navigation">
+      <a href="index.html">Home</a>  
+      <a href="about.html">About</a>
+      <a href="#">Contact</a>
+      <button class="btnLogin-popup">Login</button>
+    </nav>
+	</header>
+	<header1>
+		
+	</header1>
+
+	<div class="title">
+		<h1> Life</h1>
+</div>
+
+<section>
+
+
+<div class=" lifer"> 
+	
+
+<form action="process-form.php" method="post">
+<label for="message"></label>
+	<textarea placeholder="Type Something Here..." required id="message"></textarea>
+
+</div>
+</section>
+
+
+<div class="btn">
+<button style="font-size: 1em; ">SAVE</button>
+</div>
+
+<script> 
+	const textarea = document.querySelector("textarea")
+		textarea.addEventListener("keyup", e => {
+			textarea.style.height = "450px";
+			let scHeight = e.target.scrollHeight;
+			textarea.style.height = `${scHeight}px`;
+		});
+</script>
+</body>
+</html>
